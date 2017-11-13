@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.sheena.kalkulatordiskonharga.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harga Barang"
+        android:id="@+id/harga_barang"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Discount %"
+        android:id="@+id/discount"
+        android:inputType="number"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/hasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Harga" />
+
+        <TextView
+            android:id="@+id/hasil2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/hitung"
+            android:layout_toEndOf="@+id/hitung"
+            android:layout_marginLeft="78dp"
+            android:layout_marginStart="78dp" />
+
+        <Button
+            android:id="@+id/keluar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="keluar"
+            android:text="Keluar"
+            android:layout_alignBaseline="@+id/hitung"
+            android:layout_alignBottom="@+id/hitung"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>
